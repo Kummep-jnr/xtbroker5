@@ -1,0 +1,244 @@
+/* CONTACT BTN */
+#contact-container {
+    position: fixed;
+    bottom: 180px;
+    right: 50px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contact-button {
+    background-color: transparent;
+    cursor: pointer;
+    padding:10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+
+#contact-button:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges the button */
+    background-color:transparent;
+    
+}
+
+.contact-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(16, 68, 16);
+}
+
+@media (max-width: 700px) {
+    #contact-container {
+            position: fixed;
+            bottom: 120px;
+            right: 0px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-title {
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: rgb(16, 68, 16);
+            
+        }
+    
+        }
+
+
+        /* STYLES FOR LOGOS */
+.wrapper-pTNup0p8 {
+    display: flex;
+    overflow: clip;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.tuple-pTNup0p8 {
+    animation: partner-tuple-scroll-pTNup0p8 150s linear infinite;
+    display: grid;
+    flex-shrink: 0;
+    gap: 6px;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    min-width: 100%
+}
+
+@media screen and (min-width: 568px) {
+    .tuple-pTNup0p8 {
+        gap: 8px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tuple-pTNup0p8 {
+        gap: 40px;
+        padding: 20px 0
+    }
+}
+
+.tuple-pTNup0p8.paused-pTNup0p8 {
+    animation-play-state: paused
+}
+
+.item-pTNup0p8 {
+    filter: brightness(.5) grayscale(100%);
+    height: 60px;
+    transition: all .1s ease-in-out;
+    width: 150px
+}
+
+@media screen and (min-width: 568px) {
+    .item-pTNup0p8 {
+        height: 80px;
+        width: 200px
+    }
+}
+
+@media (any-hover: hover) {
+    .wrapper-pTNup0p8:hover .tuple-pTNup0p8 {
+        animation-play-state: paused
+    }
+}
+
+@keyframes partner-tuple-scroll-pTNup0p8 {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+/* price card */
+.three-boxes-with-kv-module-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allows boxes to wrap on smaller screens */
+}
+
+.three-boxes-with-kv-module-item {
+    flex: 1;
+    max-width: 300px;
+    /* Control the max width */
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    /* Light grey background */
+    border-radius: 5px;
+    /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: subtle shadow */
+}
+
+.three-boxes-with-kv-module-item-title {
+    font-size: 1.1rem;
+    /* Adjust font size to make it smaller */
+}
+
+.three-boxes-with-kv-module-item-text {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    /* Adjust line height for compact text */
+}
+
+.three-boxes-with-kv-module-item-img {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.component-button {
+    padding: 5px 10px;
+    /* Reduce button padding */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .three-boxes-with-kv-module-items-wrapper {
+        flex-direction: column;
+        /* Stack boxes vertically */
+        gap: 15px;
+        /* Reduce space between stacked boxes */
+    }
+
+    .three-boxes-with-kv-module-item {
+        max-width: 100%;
+        /* Full width on small screens */
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+        margin: 5px 0;
+        /* Adjust margins */
+    }
+
+    .three-boxes-with-kv-module-item-title {
+        font-size: 1rem;
+        /* Further reduce font size */
+    }
+
+    .three-boxes-with-kv-module-item-text {
+        font-size: 0.8rem;
+        /* Smaller text */
+        line-height: 1.1rem;
+        /* Adjust line height */
+    }
+
+    .component-button {
+        padding: 4px 8px;
+        /* Smaller button padding */
+    }
+
+    .three-boxes-with-kv-module-item-img {
+        max-width: 80%;
+        /* Reduce image size on smaller screens */
+        margin: 0 auto;
+        /* Center image */
+    }
+}
+
+/* Extra adjustments for very small screens */
+@media (max-width: 480px) {
+    .three-boxes-with-kv-module-item {
+        padding: 5px;
+        /* Further reduce padding */
+    }
+
+    .three-boxes-with-kv-module-item-title {
+        font-size: 0.9rem;
+        /* Even smaller title */
+    }
+
+    .three-boxes-with-kv-module-item-text {
+        font-size: 0.75rem;
+        /* Even smaller text */
+        line-height: 1rem;
+    }
+
+    .component-button {
+        padding: 3px 6px;
+        /* Very compact button */
+    }
+
+    .three-boxes-with-kv-module-item-img {
+        max-width: 70%;
+        /* Smaller images */
+    }
+}
+
+/* create account */
+
+
+/* EUR huf */
